@@ -1,0 +1,144 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background-image: radial-gradient(crimson, rgb(57, 5, 16), black);
+    text-align: center;
+    width: 100%;
+    margin: -10px;
+}
+
+#Cbody {
+    height: 100vh;
+}
+
+.calculator {
+    box-shadow: rgba(255, 255, 255, 0.56) 0vh 1vh 10vh 2vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.841);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 15vh;
+    border-radius: 4vh;
+    padding: 2vh;
+    text-align: center;
+}
+
+.bBody {
+    padding: 0.3rem 0.3rem 0.3rem;
+}
+
+.buttonSym {
+    width: 5vh;
+    height: 5vh;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: rgb(121, 54, 54);
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.buttonSym:hover {
+    background-color: rgb(75, 34, 34);
+}
+
+.button {
+    width: 5vh;
+    height: 5vh;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: rgb(55, 55, 55);
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.button:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.buttonSymResult {
+    background-color: rgb(32, 62, 32);
+    height: 11vh;
+    width: 5vh;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.buttonSymResult:hover {
+    background-color: rgb(20, 39, 20);
+}
+
+#result {
+    width: 25vh;
+    background-color: white;
+    height: 4vh;
+    margin: 1vh;
+    padding: 0.5vh;
+    border-radius: 15px;
+    text-align: right;
+    font-size: 28px;
+}
+
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    animation: colorRotate 6s linear 0s infinite, float 5s ease-in-out infinite;
+    padding: 13vh;
+}
+
+@keyframes colorRotate {
+    from {
+        color: #6666ff;
+    }
+
+    10% {
+        color: #0099ff;
+    }
+
+    50% {
+        color: #00ff00;
+    }
+
+    75% {
+        color: #ff3399;
+    }
+
+    100% {
+        color: #6666ff;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-30px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+
+}

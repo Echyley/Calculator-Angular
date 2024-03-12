@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <div id="Cbody">
+    <h1 class="rainbow">Calculator</h1>
+    <div class="calculator">
+      <p id="result">{{result}}</p>
+      <table>
+        <tr>
+          <td class="bBody"><button class="buttonSym" (click)="clean()">C</button></td>
+          <td class="bBody"><button class="buttonSym" (click)="back()">↩</button></td>
+          <td class="bBody"><button class="buttonSym" (click)="insert('/')">/</button></td>
+          <td class="bBody"><button class="buttonSym" (click)="insert('*')">*</button></td>
+        </tr>
+        <tr>
+          <td class="bBody"><button class="button" (click)="insert('7')">7</button></td>
+          <td class="bBody"><button class="button" (click)="insert('8')">8</button></td>
+          <td class="bBody"><button class="button" (click)="insert('9')">9</button></td>
+          <td class="bBody"><button class="buttonSym" (click)="insert('-')">-</button></td>
+        </tr>
+        <tr>
+          <td class="bBody"><button class="button" (click)="insert('4')">4</button></td>
+          <td class="bBody"><button class="button" (click)="insert('5')">5</button></td>
+          <td class="bBody"><button class="button" (click)="insert('6')">6</button></td>
+          <td class="bBody"><button class="buttonSym" (click)="insert('+')">+</button></td>
+        </tr>
+        <tr>
+          <td class="bBody"><button class="button" (click)="insert('1')">1</button></td>
+          <td class="bBody"><button class="button" (click)="insert('2')">2</button></td>
+          <td class="bBody"><button class="button" (click)="insert('3')">3</button></td>
+          <td class="bBody" rowspan="2"><button class="buttonSymResult" (click)="mathIt()">=</button></td>
+        </tr>
+        <tr>
+          <td class="bBody" colspan="2"><button class="button" style="width: 11vh" (click)="insert('0')">0</button></td>
+          <td class="bBody"><button class="buttonSym" (click)="insert('.')">.</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
